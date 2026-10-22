@@ -1,0 +1,60 @@
+:root {
+  --paper: #101b24;
+  --sidebar: #15252f;
+  --surface-raised: #192d36;
+  --ink: #e5efef;
+  --muted: #9fb5be;
+  --subtle: #8faab2;
+  --line: #34505b;
+  --green: #85d6bb;
+  --green-dark: #a4e6d0;
+  --accent-ink: #102c27;
+  --teal: #326b68;
+  --blue: #85b6c4;
+  --pink: #f0a9cb;
+  --gold: #edc58e;
+  --display: 'Fraunces', Georgia, serif;
+  --sans: 'DM Sans', sans-serif;
+
+  color: var(--ink);
+  background: var(--paper);
+  color-scheme: dark;
+  font-family: var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: radial-gradient(ellipse at 90% 30%, #16353480, transparent 60%) fixed;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+label.import-button:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+}
+
+::selection {
+  color: white;
+  background: var(--teal);
+}
